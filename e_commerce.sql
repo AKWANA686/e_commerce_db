@@ -108,7 +108,7 @@ CREATE TABLE size_option (
 
 -- Defines custom attributes that products can have
 -- Flexible system for product specifications
-CREATE TABLE product_attribute(
+CREATE TABLE product_attribute (
     attribute_id INT PRIMARY KEY AUTO_INCREMENT,
     attribute_name VARCHAR(100) NOT NULL,
     attribute_category_id INT NOT NULL,
@@ -122,14 +122,13 @@ CREATE TABLE product_attribute(
 -- Helps organize attributes in UI (e.g., "Technical Specs", "Fabric Details")
 CREATE TABLE attribute_category (
     attribute_category_id INT PRIMARY KEY AUTO_INCREMENT,
-    category_name VARCHAR(100) NOT NULL,
-    description TEXT
+    category_name VARCHAR(100) NOT NULL
 );
 
 -- Defines data types for product attributes
 -- Ensures type safety for attribute values
 CREATE TABLE attribute_type (
-    atribute_type_id INT PRIMARY KEY AUTO_INCREMENT,
+    attribute_type_id INT PRIMARY KEY AUTO_INCREMENT,
     type_name VARCHAR(50) NOT NULL,
     data_type ENUM('text', 'number', 'boolean', 'date') NOT NULL
 );
