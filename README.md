@@ -1,3 +1,7 @@
+# ERD DIAGRAM FOR THE E-COMMERCE DBMS
+
+![E-COMMERCE DBMS ERD DIAGRAM](./images/ERD.png)
+
 # eCommerce Product Schema
 
 This SQL schema represents a robust and scalable backend structure for managing a product catalog in an eCommerce system. It supports multiple features such as product hierarchies, color and size variations, branding, custom attributes, and images.
